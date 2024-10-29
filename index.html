@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobilefrist.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="img/delicious-bites.png">
+
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Reservar</a></li>
+                <li><a href="#">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="todo">
+        <section>
+            <div class="obj1">
+
+                <h2>Hamburgesas</h2>
+                <picture>
+                    <source src="img/hamburgesa600.png" media="(min-width: 720px)">
+                    <source src="img/hamburgesa1000.png" media="(min-width:1200px)">
+
+                    <img src="img/hamburgesa400.png" style="width: 100%">
+                </picture>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, cum ipsam. Ipsum reprehenderit
+                    quas dicta nihil autem. Dolorem dignissimos animi
+                </p>
+            </div>
+            <div class="obj2">
+                <h2>Nachos</h2>
+                <picture>
+                    <source src="img/nachos-con-queso650.png" media="(min-width: 720px)">
+                    <source src="img/nachos-con-queso1000.png" media="(min-width:1200px)">
+
+                    <img src="img/nachos-con-queso400.png" style="width: 100%">
+                </picture>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum pariatur a officiis veniam voluptate
+                    optio, culpa quaerat exercitationem! Mollitia, omnis saepe. Autem adipisci ducimus quasi aliquam,
+                    corrupti optio et repellat?
+                </p>
+            </div>
+        </section>
+        <footer>
+            
+        </footer>
+    </main>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
